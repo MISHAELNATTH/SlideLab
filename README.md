@@ -1,13 +1,41 @@
 # SlideLab
 
-## Lien du projet
-👉 https://florian-glay.github.io/Projet-Informatique-S6-GR4/
+> **Éditeur de présentations visuelles non-linéaires et interactives.**
+
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+## 🔗 Lien du projet
+👉 **https://mishaelnatth.github.io/SlideLab/**
+
+---
+
+---
+## 👤 Ma Contribution (Rôle : UI-UX Front-End & Référent Technique assistant)
+Ce projet a été réalisé en équipe de 4 étudiants (Junia). J'ai occupé le poste de **Référent Technique assistant** avec une responsabilité majeure sur le cœur de l'éditeur (Core Editor).
+
+**Mes réalisations techniques clés :**
+
+### 1. Architecture de Navigation & Menu Contextuel (`ContextMenu.js`)
+* **Fonctionnalité :** Conception intégrale du menu contextuel (clic-droit) intelligent qui s'adapte à l'élément ciblé.
+* **Logique de Liens (Linking) :** Développement d'un système de routage interne permettant de transformer **n'importe quel élément** (forme, texte, image) en lien de navigation vers une autre slide ou une URL externe.
+* **Impact :** Cette architecture est la base du mode "Arborescence", permettant des présentations non-linéaires interactives.
+
+### 2. Moteur de Normalisation Visuelle (`StyleHelper.js`)
+* **Challenge :** Garantir le "WYSIWYG" (What You See Is What You Get) entre l'éditeur, le mode présentation et l'export PDF/HTML.
+* **Solution :** Création d'une librairie utilitaire centrale (`StyleHelper`) qui génère les propriétés CSS de manière déterministe. Elle assure que le rendu des pixels est identique à 100% quel que soit le contexte d'affichage.
+
+### 3. Composants Dynamiques & Stabilité UI
+* **Tableaux Editables :** Implémentation de la logique d'ajout/suppression dynamique de lignes et colonnes (`createTableControls`), avec gestion des styles de bordures et d'en-têtes.
+* **Gestion des Événements (Event Handling) :** Résolution des conflits d'interactions (ex: empêcher le Drag & Drop lors de la sélection de couleur) via une gestion fine de la propagation des événements (`stopPropagation`, `lockPointerEvents`).
+* **Toolbars Unifiées :** Développement de barres d'outils contextuelles cohérentes pour tous les types d'éléments.
 
 ---
 
 ## Présentation
 Ce projet a été développé dans le cadre du **Projet Informatique – S6 (GR4)**.  
-Il s’agit d’une application web (HTML / CSS / JS) utilisant **Vite**, **React** et **Tailwind CSS**, avec un système d’édition et de gestion de contenu, déployée sur **GitHub Pages**.
+Il s’agit d’une application web (HTML / CSS / JS) utilisant **Vite**, **Node**, **React** et **Tailwind CSS**, avec un système d’édition et de gestion de contenu, déployée sur **GitHub Pages**.
 
 ---
 
@@ -56,8 +84,8 @@ Avant de pouvoir utiliser ou modifier le projet, assure-toi d’avoir installé 
 
 ### Cloner le dépôt
 ```bash
-git clone https://github.com/Florian-Glay/Projet-Informatique-S6-GR4.git
-cd Projet-Informatique-S6-GR4
+git clone https://github.com/MISHAELNATTH/SlideLab.git 
+cd SlideLab
 cd projetGr4
 ```
 
@@ -116,7 +144,7 @@ git add .
 git commit -m "Initial commit"
 
 git branch -M main
-git remote add origin https://github.com/Florian-Glay/Projet-Informatique-S6-GR4.git
+git remote add origin https://github.com/MISHAELNATTH/SlideLab.git
 git push -u origin main
 ```
 
