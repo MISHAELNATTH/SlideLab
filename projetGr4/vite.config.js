@@ -5,7 +5,7 @@ import fs from "fs";
 import path from "path";
 
 export default defineConfig(({ command }) => {
-  const repoName = "Projet-Informatique-S6-GR4";
+  const repoName = "SlideLab";
 
   // récupère automatiquement tous les .html dans src/html
   const pagesDir = resolve(__dirname, "src/html");
